@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User registration form </title>
+</head>
+<body>
+  <form  id="regform" action="">
+  <input type="text" id="name" placeholder="Enetr name " required><br>
+  <input type="email" id="email" placeholder="Enetr email" required><br>
+  <input type="password" id="password" placeholder="Enter password " required><br>
+  <button type="submi t">submit</button>
+</form>
+  <script>
+   document.getElementById("regform").addEventListener("submit" ,function(e)
+ {
+  e.preventDefault();
+  let name=document.getElementById("name").value;
+  let email=document.getElementById("email").value;
+  let password=document.getElementById("password").value;
+
+  let user ={ name,email,password };
+  let users= JSON.parse(localStorage.getItem("userlist")) || [];
+  users.push(user);
+  localStorage.setItem("userlist",JSON.stringify(users));
+  window.location.href="users.html";
+
+ } )
+    </script>
+  
+</body>
+</html>
