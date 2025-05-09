@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Simple jQuery Mobile Website with Nav</title>
+
+  <!-- jQuery Mobile CSS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+  <!-- jQuery & jQuery Mobile JS -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    .content-center {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Home Page -->
+  <div data-role="page" id="home">
+    <div data-role="header">
+      <h1>Welcome</h1>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
+          <li><a href="#about" data-icon="info">About</a></li>
+          <li><a href="#contact" data-icon="mail">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div data-role="content" class="content-center">
+      <h2>Simple Mobile Site</h2>
+      <p>This is the homepage of our jQuery Mobile website.</p>
+    </div>
+
+    <div data-role="footer">
+      <h4> 2025 Mobile Site</h4>
+    </div>
+  </div>
+
+  <!-- About Page -->
+  <div data-role="page" id="about">
+    <div data-role="header">
+      <h1>About Us</h1>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home" data-icon="home">Home</a></li>
+          <li><a href="#about" class="ui-btn-active" data-icon="info">About</a></li>
+          <li><a href="#contact" data-icon="mail">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div data-role="content" class="content-center">
+      <p>We are building mobile-friendly websites using jQuery Mobile framework.</p>
+    </div>
+
+    <div data-role="footer">
+      <h4>About - Mobile Site</h4>
+    </div>
+  </div>
+
+  <!-- Contact Page -->
+  <div data-role="page" id="contact">
+    <div data-role="header">
+      <h1>Contact</h1>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home" data-icon="home">Home</a></li>
+          <li><a href="#about" data-icon="info">About</a></li>
+          <li><a href="#contact" class="ui-btn-active" data-icon="mail">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div data-role="content" class="content-center">
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+
+        <label for="Email">Email:</label>
+        <input type="email" name="email" id="email">
+
+        <label for="message">Message:</label>
+        <textarea name="message" id="message"></textarea>
+
+        <input type="submit" value="Send">
+      </form>
+    </div>
+
+    <div data-role="footer">
+      <h4>Contact - Mobile Site</h4>
+    </div>
+  </div>
+
+</body>
+</html>
